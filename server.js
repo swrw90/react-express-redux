@@ -9,10 +9,10 @@ app.get('/api/customers', (req, res) => {
         { id: 1, firstName: Wyatt, lastName: Watson },
         { id: 1, firstName: Wyatt, lastName: Watson }                        
     ];
-    
+
     res.json(customers);
 });
 
 const port = 5000;
 
-app.listen(port, () => console.log(`Server running on port {port}`));
+app.listen(port, () => console.log(`Server running on port ${port}`));
