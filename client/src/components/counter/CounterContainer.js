@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { up, down } from '../counter../actions'
+import { up, down } from '../../actions'
+import Counter from '../counter/Counter';
 
 class CounterContainer extends React.Component {
     render() {
@@ -10,7 +11,7 @@ class CounterContainer extends React.Component {
     }
 }
 
-let mapStateToProps = () => {
+let mapStateToProps = (state) => {
     return state;
 }
 
