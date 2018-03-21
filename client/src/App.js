@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Customers from "./components/customers/Customers";
+import CounterContainer from "./components/counter/CounterContainer";
 
 class App extends Component {
   render() {

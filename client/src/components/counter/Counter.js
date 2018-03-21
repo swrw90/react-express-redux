@@ -11,6 +11,12 @@ class Counter extends React.Component {
         });
     };
 
+    componentWillUnmount() {
+        let elem = getElementById("counter");
+        elem.addEventListener("mouseover");
+        elem.addEventListener("mouseleave");
+    }
+
     render() {
         return (
             <div>

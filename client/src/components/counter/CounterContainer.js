@@ -1,4 +1,6 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import { up, down } from '../counter../actions'
 
 class CounterContainer extends React.Component {
     render() {
@@ -8,4 +10,8 @@ class CounterContainer extends React.Component {
     }
 }
 
-export default CounterContainer;
+let mapStateToProps = () => {
+    return state;
+}
+
+export default connect(mapStateToProps, { up, down }) (CounterContainer);
