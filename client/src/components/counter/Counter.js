@@ -20,7 +20,8 @@ class Counter extends React.Component {
     render() {
         return (
             <div>
-                <h1 id="counter"> Counter Component {this.props.counterIndex} </h1>
+                <h1 id="counter"> Counter Component  </h1>
+                <h1 id="counter"> {this.props.counterIndex} </h1>                
                 <button onClick={this.props.up}>Up</button>
                 <button onClick={this.props.down}>Down</button>
             </div>
